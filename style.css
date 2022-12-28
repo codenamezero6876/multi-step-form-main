@@ -1,0 +1,553 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ecf2f8;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section, section .container, form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.step{
+    display: none;
+}
+
+.step.active{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*Static Images styling*/
+/*---------------------*/
+.bg-img-mobile{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.bg-img-desktop{
+    position: absolute;
+    z-index: -1;
+    display: none;
+}
+
+.icon{
+    margin: auto 0;
+}
+
+
+
+/*Step Progress Styling*/
+/*---------------------*/
+.step-progress{
+    display: flex;
+    width: 47.733333%;
+    height: 5.037037%;
+    margin: 0 auto;
+    margin-top: 8.8%;
+    justify-content: space-between;
+}
+
+.sp-section{
+    width: 34px;
+    height: 34px;
+}
+
+.step-progress-num{
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 100%;
+}
+
+.sp-1 .num{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+}
+
+
+
+/*Content styling*/
+/*---------------*/
+.content{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #00000020;
+    padding: 32px 26px;
+    width: 91.4666666%;
+    margin: 0 auto;
+    margin-top: 8.8%;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content h3{
+    font-size: 1.45rem;
+}
+
+.content .under-h3-text{
+    opacity: 60%;
+    margin-top: 10px;
+    line-height: 1.4rem;
+    margin-bottom: 25px;
+}
+
+.hidden-content.hidden-content.hidden-content.hidden-content, .desktop{
+    display: none;
+}
+
+
+
+/*Navigation Section Styling*/
+/*--------------------------*/
+.backnav, .frontnav{
+    width: fit-content;
+    padding: 13px 17px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    border-width: 0px;
+}
+
+.frontnav{
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    border-radius: 5px;
+}
+
+.navigation, .startnav{
+    background-color: white;
+    margin-top: 100px;
+    padding: 17px 4.266666%;
+    border-radius: 5px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.startnav{
+    text-align: right;
+}
+
+
+
+/*Step 1 Styling*/
+/*--------------*/
+.form-group input{
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    border-color: lightgray;
+    border-width: 0.5px;
+}
+
+::placeholder{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+.step-1 .content .form-group{
+    margin-top: 10px;
+}
+
+.personal{
+    font-size: 0.8rem;
+}
+
+
+
+/*Step 2 and Step 3 styling*/
+/*--------------*/
+.form-group .plan, .step-3 .add-ons{
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.step-2 .content .cheap{
+    color: hsl(213, 96%, 18%);
+    opacity: 100%;
+    font-weight: 500;
+}
+
+.step-2 .plan:hover, .step-3 .add-ons:hover{
+    background-color: #ecf2f8;
+}
+
+.plan .button-text, .add-ons .checkbox-desc{
+    margin-left: 15px;
+    text-align: left;
+    margin-top: 0.5px;
+}
+
+.plan .plan-name{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.plan .button-text .price{
+    margin-top: 5px;
+    font-size: 0.9rem;
+    opacity: 75%;
+}
+
+.form-group .clicked{
+    background-color: #ecf2f8;
+    border: 1px solid hsl(213, 96%, 18%);
+}
+
+.step-2 .freq-section{
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5F8F9;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+.freq-section .freq{
+    opacity: 65%;
+}
+
+.freq-section .chosen{
+    color: hsl(213, 96%, 18%);
+    opacity: 100%;
+    font-weight: 500;
+}
+
+.checkmark{
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto 10px auto 0px;
+}
+
+.checkmark.clicked{
+    background-color: hsl(243, 100%, 62%);
+}
+
+.step-3 .add-ons{
+    justify-content: space-between;
+}
+
+.step-3 .checkbox-text{
+    display: flex;
+}
+
+.add-ons .checkbox-desc{
+    margin: auto 0;
+}
+
+.add-ons .add-ons-name{
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.add-ons .add-ons-desc{
+    opacity: 75%;
+    font-size: 0.8rem;
+}
+
+.step-3 .price{
+    margin: auto 0;
+    color: hsl(243, 100%, 62%);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+
+
+/*Step 4 styling*/
+/*--------------*/
+.step-4 .summary{
+    background-color: #F5F8F9;
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.step-4 .total-price{
+    padding: 20px 15px;
+}
+
+.step-4 .plan, .step-4 .add-ons, .step-4 .total-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-4 .plan{
+    margin-bottom: 10px;
+}
+
+.step-4 .add-ons{
+    margin-top: 10px;
+}
+
+.step-4 .last-changes{
+    width: fit-content;
+    border: none;
+    background-color: white;
+    font-family: "Ubuntu", sans-serif;
+    opacity: 75%;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.step-4 .last-changes:hover{
+    opacity: 100%;
+}
+
+.step-4 .plan .price{
+    font-weight: 500;
+}
+
+.step-4 .add-ons .add-ons-text{
+    font-size: 0.8rem;
+    margin: auto 0;
+    opacity: 75%;
+}
+
+.step-4 .total-price .final-freq{
+    opacity: 75%;
+    margin: auto 0;
+}
+
+.step-4 .total-price .totalPrice{
+    font-weight: 700;
+    color: hsl(243, 100%, 62%);
+    font-size: 1.2rem;
+}
+
+.step-4  .frontnav.last-front{
+    background-color: hsl(243, 100%, 62%);
+}
+
+
+
+/*Step 5 styling*/
+/*--------------*/
+.thank-you .content{
+    text-align: center;
+    padding: 75px 25px;
+}
+
+.thank-you .ty-icon{
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.thank-you h3{
+    margin-bottom: 20px;
+}
+
+.thank-you .last-words{
+    opacity: 75%;
+    line-height: 1.5;
+}
+
+
+
+/*Toggle switch*/
+/*-------------*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.form-group .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 6px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.toggle:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+}
+  
+.toggle:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%);
+}
+  
+.toggle:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+.slider.round {
+    border-radius: 16px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+/*Desktop Version*/
+/*---------------*/
+@media (min-width: 941px){
+    .bg-img-mobile{
+        display: none;
+    }
+
+    .bg-img-desktop{
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .step.active{
+        width: 80%;
+        max-width: 960px;
+        min-height: 540px;
+        height: auto;
+        background-color: white;
+        display: flex;
+        position: relative;
+        z-index: 0;
+    }
+
+    .interact-area{
+        width: 100%;
+        height: auto;
+        flex-basis: 63.6025505%;
+        background-color: white;
+    }
+
+    .content{
+        width: 100%;
+        border: none;
+        box-shadow: none;
+        padding: 50px 10.7332624%;
+    }
+
+    .step-progress{
+        display: flex;
+        padding: 40px 0px 40px 40px;
+        width: auto;
+        flex-basis: 36.3974495%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .sp-section{
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .step-progress-num{
+        width: 34px;
+        margin-right: 15px;
+    }
+    
+    .sp-section-text{
+        color: white;
+    }
+
+    .sp-text-main{
+        font-size: 0.9rem;
+    }
+
+    .sp-text-desc{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .navigation, .startnav{
+        padding: 33px 10.7332624%;
+        margin: auto;
+    }
+
+    .step-2-options{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .step-2 .plan{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .step-2-options .form-group{
+        width: 30%;
+    }
+
+    .icon{
+        margin-bottom: 40%;
+    }
+
+    .step-2 .button-text{
+        margin-left: 0px;
+    }
+    
+
+    
+}
